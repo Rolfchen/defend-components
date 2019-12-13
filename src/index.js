@@ -1,1 +1,1 @@
-import * as components from './components';
+import * as Components from "./Components";
