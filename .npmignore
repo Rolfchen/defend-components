@@ -1,0 +1,9 @@
+# .npmignore
+
+.gitignore
+.babelrc
+src
+docs
+.storybook
+webpack.config.js
+setupJest.js

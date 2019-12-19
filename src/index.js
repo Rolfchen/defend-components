@@ -1,1 +1,1 @@
-import * as Components from "./Components";
+export * from "./Common";
