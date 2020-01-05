@@ -2,11 +2,18 @@ const { series, concurrent } = require("nps-utils");
 
 module.exports = {
   scripts: {
-    default: "webpack-dev-server --open --mode development",
+    description: "DEFEND scripts for various operations",
+    default: "npm start",
     docs: {
-      description: "Demo and documentation server",
+      description: "Documentation and demos",
       default: "npx nps docs.storybook",
-      storybook: "start-storybook"
+      storybook: "storybook-server"
+    },
+    deploy: {
+      default: "npx nps deploy.github",
+      github: "npx nps deploy.transpile",
+      transpile: "babel src -d dist",
+      build: "webpack --mode production --config webpack.config.js"
     }
   }
 };
